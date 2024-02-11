@@ -31,6 +31,38 @@
           border-radius: 8px;
           margin: 5px;
       }
+      .table th, .table td {
+      text-align: center;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-style: italic;
+      padding: 10px;
+    }
+    .table thead th {
+      background-color:violet;
+      color: white;
+      border-color: #454d55;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: orange;
+    }
+    .table-hover tbody tr:hover {
+      background-color: blue;
+    }
+    .table-bordered th, .table-bordered td {
+      border: 1px solid rgb(155, 135, 235);
+    }
+    .table-bordered thead th, .table-bordered tbody th, .table-bordered tbody td {
+      border: 1px solid black;
+    }
+    .table-bordered thead th {
+      border-bottom-width: 2px;
+    }
+    .table-sm th, .table-sm td {
+      padding: 0.4rem;
+    }
   </style>
   </head>
 <body>
@@ -67,7 +99,55 @@
   <img src="sprit" alt="Sprit">
 </div>
 
-
+<table class="table table-bordered table-striped table-hover table-sm">
+  <caption>Letters And Drink,Start Name,Fish Data</caption>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Letter</th>
+      <th scope="col">Drink</th>
+      <th scope="col">Star Name</th>
+      <th scope="col">Fish</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">P</th>
+      <td>Pepsi</td>
+      <td scope="row">Proxima Centauri</td>
+      <td>Piranha</td>
+    </tr>
+    <tr>
+      <th scope="row">O</th>
+      <td>Orange</td>
+      <td>Orion</td>
+      <td>Octopus</td>
+    </tr>
+    <tr>
+      <th scope="row">T</th>
+      <td>Tango</td>
+      <td>Tau Ceti</td>
+      <td>Trout</td>
+    </tr>
+    <tr>
+      <th scope="row">U</th>
+      <td>Umbrella Drink</td>
+      <td>Ursa Major</td>
+      <td>Umbrella Octopus</td>
+    </tr>
+    <tr>
+      <th scope="row">S</th>
+      <td>Sidecar</td>
+      <td>Sirius</td>
+      <td>Salmon</td>
+    </tr>
+    <tr>
+      <th scope="row">O</th>
+      <td>Old Fashioned</td>
+      <td>Omega Centauri</td>
+      <td>Opah</td>
+    </tr>
+  </tbody>
+</table>
 
 
 </body>
