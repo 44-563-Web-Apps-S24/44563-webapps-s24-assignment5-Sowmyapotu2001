@@ -2,5 +2,5 @@
 # WebApps-Assignment-5 Starter Code
 
 
-[Hosted Link](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment5-Sowmyapotu2001/drinks.html)
+[Hosted Link](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment5-Sowmyapotu2001/drinks.html)
 
