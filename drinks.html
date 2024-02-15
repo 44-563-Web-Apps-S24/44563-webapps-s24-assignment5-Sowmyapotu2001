@@ -15,95 +15,28 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-  <style>
-    .drinkimages {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
 
-    .drinkimages img {
-      max-width: 100%;
-      height: auto;
-    }
-
-
-    .thumbnail img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      margin: 5px;
-    }
-
-    .table th,
-    .table td {
-      text-align: center;
-    }
-
-    caption {
-      caption-side: top;
-      font-weight: bold;
-      font-style: italic;
-      padding: 10px;
-    }
-
-    .table thead th {
-      background-color: rgb(130, 238, 135);
-      color: white;
-      border-color: #454d55;
-    }
-
-    .table-striped tbody tr:nth-of-type(odd) {
-      background-color: orange;
-    }
-
-    .table-hover tbody tr:hover {
-      background-color: blue;
-    }
-
-    .table-bordered th,
-    .table-bordered td {
-      border: 1px solid rgb(155, 135, 235);
-    }
-
-    .table-bordered thead th,
-    .table-bordered tbody th,
-    .table-bordered tbody td {
-      border: 1px solid black;
-    }
-
-    .table-bordered thead th {
-      border-bottom-width: 2px;
-    }
-
-    .table-sm th,
-    .table-sm td {
-      padding: 0.4rem;
-    }
-  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="drinks.html">A Few Drinks</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="basic.html">Basic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="advanced.html">Advanced</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">A Few Drinks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: black;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="basic.html">Basic.html</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="advanced.html">Advanced.html</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   <h1>Have a cup with Sowmya potu</h1>
 
   <div class="container">
@@ -127,20 +60,22 @@
   <p>Drink names row breaks first and comes to vertical when we decresing the size of the page browser because medium
     size decreases less than 768px.then after decresing size again frist row also breaks into vertical whne size
     decreses less than 576px</p>
-
-  <div class="drinkimages">
-    <img src="pepsi" alt="Pepsi" width="400" height="400">
-    <img src="tango" alt="Tango" width="400" height="400">
-    <img src="sprit" alt="Sprit" width="400" height="400">
+  <h4>Images</h4>
+  <div class="container">
+    <img src="pepsi" class="img-fluid" alt="Pepsi" width="200" height="200">
+    <img src="tango" class="img-fluid" alt="Tango" width="200" height="200">
+    <img src="sprit" class="img-fluid" alt="Sprit" width="200" height="200">
   </div>
-  <div class="thumbnail">
-    <img src="pepsi" alt="Pepsi">
-    <img src="tango" alt="Tango">
-    <img src="sprit" alt="Sprit">
+  <h4>Thumbnails</h4>
+  <div class="container">
+    <img src="pepsi" class="img-thumbnail" alt="Pepsi" width="200" height="200">
+    <img src="tango" class="img-thumbnail" alt="Tango" width="200" height="200">
+    <img src="sprit" class="img-thumbnail" alt="Sprit" width="200" height="200">
   </div>
 
-  <table class="table table-bordered table-striped table-hover table-sm">
-    <caption>Letters And Drink,Start Name,Fish Data</caption>
+  <h3>Table</h3>
+  <table class="table table-bordered table-striped table-hover table-compact">
+    <caption>Letter,Drink,Star Name,Fish</caption>
     <thead class="thead-dark">
       <tr>
         <th scope="col">Letter</th>
@@ -153,7 +88,7 @@
       <tr>
         <th scope="row">P</th>
         <td>Pepsi</td>
-        <td scope="row">Proxima Centauri</td>
+        <td >Proxima Centauri</td>
         <td>Piranha</td>
       </tr>
       <tr>
@@ -188,11 +123,15 @@
       </tr>
     </tbody>
   </table>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <span class="navbar-brand">Button Groups With Letters</span>
-    </div>
-  </nav>
+  <div class="container">
+ 
+<button  type="button" class="btn btn-primary">P</button>
+<button  type="button"  class="btn btn-primary">O</button>
+<button  type="button"  class="btn btn-primary">T</button>
+<button  type="button"  class="btn btn-primary ">U</button>
+<button  type="button"  class="btn btn-primary">S</button>
+<button  type="button"  class="btn btn-primary">O</button>
+</div>
   <div class="container mt-4">
     <div class="btn-toolbar" role="toolbar" aria-label="Button Groups">
 
@@ -226,9 +165,8 @@
   </div>
   </div>
   <br>
-  <br>
+  <h4>Form</h4>
   <form>
-    
     <div class="form-group">
       <label for="email">Email address</label>
       <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -247,6 +185,7 @@
     
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+  <h4>BONUS</h4>
   <div class="container">
     <h1>Card Of Drinks</h1>
     <div class="row">
